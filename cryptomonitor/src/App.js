@@ -11,18 +11,15 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="container">
-        <Crypto />
           <ul>
             <li><Link to="/">public component</Link></li>
             <li><Link to="/secured">secured component</Link></li>
           </ul>
           <Route exact path="/" component={Welcome} />
           <Route path="/secured" component={Secured} />
-          
         </div>
       </BrowserRouter>
     );
   }
 }
-
 export default App;

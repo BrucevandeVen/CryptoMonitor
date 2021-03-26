@@ -1,8 +1,8 @@
-
 import React, { Component } from 'react';
 import Keycloak from 'keycloak-js';
 import UserInfo from './UserInfo';
 import Logout from './Logout';
+import Crypto from '../components/Crypto';
 
 class Secured extends Component {
 
@@ -28,6 +28,7 @@ class Secured extends Component {
           <p>This is a Keycloak-secured component of your application. You shouldn't be able
           to see this unless you've authenticated with Keycloak.</p>
           <UserInfo keycloak={this.state.keycloak} />
+          <Crypto />
           <Logout keycloak={this.state.keycloak} />
         </div>
       ); else return (<div>Unable to authenticate!</div>)
