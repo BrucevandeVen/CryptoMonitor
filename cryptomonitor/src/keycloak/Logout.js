@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
+import * as ReactBootstrap from 'react-bootstrap';
 
 class Logout extends Component {
 
@@ -10,9 +11,9 @@ class Logout extends Component {
 
   render() {
     return (
-      <button onClick={ () => this.logout() }>
-        Logout
-      </button>
+      <ReactBootstrap.Button onClick={ () => this.logout() }>
+        Uitloggen
+      </ReactBootstrap.Button>
     );
   }
 }

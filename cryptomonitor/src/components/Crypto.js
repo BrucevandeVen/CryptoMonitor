@@ -1,4 +1,5 @@
 import React from "react";
+import * as ReactBootstrap from "react-bootstrap";
 
 export default class Crypto extends React.Component {
     constructor() {
@@ -19,11 +20,11 @@ export default class Crypto extends React.Component {
     render() {
       return (
         <div className="">
-          <h1>Crypto List</h1>
+          <h1>Crypto Monitor</h1>
+          <br />
           <ul>
             {this.state.cryptos.map(crypto => {
               return <li key={`crypto-${crypto.id}`}>
-                  <div>ID: {crypto.id}</div>
                   <div>Name: {crypto.name}</div>
                   <div>Price: €{crypto.price}</div>
                   <br />  
