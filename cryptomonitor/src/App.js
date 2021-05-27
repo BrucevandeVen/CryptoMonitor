@@ -4,6 +4,7 @@ import Welcome from './keycloak/Welcome';
 import Secured from './keycloak/Secured';
 import Crypto from './components/Crypto';
 import './App.css';
+import * as ReactBootstrap from 'react-bootstrap';
 
 class App extends Component {
 
@@ -12,8 +13,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <ul>
-            <li><Link to="/">public component</Link></li>
-            <li><Link to="/secured">secured component</Link></li>
+            <li><Link to="/secured">Inloggen</Link></li>
           </ul>
           <Route exact path="/" component={Welcome} />
           <Route path="/secured" component={Secured} />
