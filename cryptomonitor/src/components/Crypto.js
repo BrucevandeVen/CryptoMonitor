@@ -25,8 +25,8 @@ export default class Crypto extends React.Component {
           <ul>
             {this.state.cryptos.map(crypto => {
               return <li key={`crypto-${crypto.id}`}>
-                  <div>Name: {crypto.name}</div>
-                  <div>Price: €{crypto.price}</div>
+                  <div>{crypto.name}</div>
+                  <div>€{crypto.price}</div>
                   <br />  
                   </li>
             })}

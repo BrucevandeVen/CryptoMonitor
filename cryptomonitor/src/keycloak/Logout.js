@@ -11,7 +11,7 @@ class Logout extends Component {
 
   render() {
     return (
-      <ReactBootstrap.Button onClick={ () => this.logout() }>
+      <ReactBootstrap.Button variant="danger" onClick={ () => this.logout() }>
         Uitloggen
       </ReactBootstrap.Button>
     );
